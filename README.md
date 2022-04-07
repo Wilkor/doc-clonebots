@@ -10,6 +10,7 @@ Com ele é possivel: clonar estrutura builder, variáveis, ações globais, regr
  Nessa sessão do plugin, você pode fazer um clone de uma versão BETA para PROD, alem de poder levar junto para o outro bot: resource (conteúdos), respostas prontas e gerenciamento de filas. 
  
  Para usar essa funcionalidade é muito simples, basta instalar o CloneBots no seu bot destino, adicionar a chave **HTTP/key** do bot que você deseja clonar no campo "Enter the source bot key" e depois de ter selecionado uma ou mais opções dessa sessão,  é só clicar no botão **Clone** e pronto! o fluxo do bot A vai estar no bot B
+ 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/clone-builder.png)
  
 # Merge of Blocks
@@ -17,7 +18,9 @@ Com ele é possivel: clonar estrutura builder, variáveis, ações globais, regr
  
  Caso queira clonar blocos de um outro bot, você pode pegar a chave **HTTP/Key** do bot origem, inserir no campo **bot key**, depois clicar em **get builder**.
  Bom, realizado o processo acima, basta selecionar o bloco desejado, levar ele parar a caixa a direita e clicar em **Merge**, após isso, o bloco selecionado deve aparecer no bot destino na mesma posição que ele estava no bot origem.
+ 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/merge-of-blocks.png)
+
 # Resource and Builder flow
 
 Esse sessão é restrita para quem cria bots no padrão **chassi**!  
