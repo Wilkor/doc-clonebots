@@ -7,11 +7,18 @@ O **CloneBots**, faz seu dia ser muito mais produtivo!
 Com ele é possivel: clonar estrutura builder, variáveis, ações globais, regras de atendimento, gerenciamento de filas, respostas prontas e recursos de um bot para outro! Além disso, você também consegue clonar blocos separadamente atrés da sessão Merge of Blocks.
 
 # Clone Builder
- Nessa sessão do plugin, você pode fazer um clone de uma versão BETA para PROD, alem de poder levar junto para o outro bot: resource (conteúdos), respostas prontas e gerenciamento de filas. 
+ Nessa sessão do plugin, você pode fazer um clone de uma versão BETA para PROD, além de poder levar junto para o outro bot: resource (conteúdos), respostas prontas e gerenciamento de filas. 
  
  Para usar essa funcionalidade é muito simples, basta instalar o CloneBots no seu bot destino, adicionar a chave **HTTP/key** do bot que você deseja clonar no campo "Enter the source bot key" e depois de ter selecionado uma ou mais opções dessa sessão,  é só clicar no botão **Clone** e pronto! o fluxo do bot A vai estar no bot B
  
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/clone-builder.png)
+
+ - **Builder:** Habilitando essa opção, você faz o clone de toda estrutura do builder + ações globais;
+ - **Resource:** Habilitando essa opção, você consegue levar todo conteúdo (menu '...' -> conteúdo) do bot origem para o bot destino;
+ - **Queue Management:** Habilitando essa opção, você pode também pode clonar o gerenciamento de fila que foi criado no bot origem para o destino;
+ - **Ready Answers:** Habilitando essa opção, você pode clonar as respostas prontas da origem para o bot destino;
+ 
+ Obs: Geralmente eu faço um bot BETA, deixo ele redondinho, e depois habilito todos as opções e dou um clonar para meu bot de PROD.
  
 # Merge of Blocks
  A ideia aqui nesta sessão é fazer o clone apenas de um ou mais blocos, por default,  eu deixei alguns blocos pre-setados que poderão ajudar em algum tipo de validação, por exemplo: validação de email, validação de cpf e etc.
