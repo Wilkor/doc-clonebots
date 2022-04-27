@@ -54,6 +54,6 @@ obs:Serviço é pago.
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/desk-configuration.png)
 
 # Send Notification (Uso em bots Roteadores + WhatsApp instalado)
-Nessa guia do plugin, ainda beta, você pode enviar notificações ativa para os clientes assim como é feito no próprio plugin de broadcast que já existe na plataforma, porém ao inviar pelo **CloneBots**, você pode setar variaveis no extras do contato, te dando mais **flexibilidade e estrategia** na hora de recepcionar essa mensagem.
+Nessa guia do plugin, ainda beta, você pode enviar notificações ativa para os clientes assim como é feito no próprio plugin de broadcast existente na plataforma, porém ao enviar através do **CloneBots**, você pode setar variaveis no extras do contato, oferecendo mais **flexibilidade e estrategia** na hora de recepcionar essa mensagem no fluxo.
 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/Send-notification.png)
