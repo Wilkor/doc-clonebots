@@ -60,3 +60,7 @@ obs:Serviço é pago.
 Nessa guia do plugin, ainda beta, você pode enviar notificações ativa para os clientes assim como é feito no próprio plugin de broadcast existente na plataforma, porém ao enviar através do **CloneBots**, você pode setar variaveis no extras do contato, oferecendo mais **flexibilidade e estrategia** na hora de recepcionar essa mensagem no fluxo.
 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/Send-notification.png)
+
+🎬 Video de demonstração de algumas funcionalidades:
+
+https://youtu.be/nmxkEgLyZz0
