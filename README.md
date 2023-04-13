@@ -8,12 +8,15 @@ Nessa sessão do plugin, você pode fazer um clone de uma versão BETA para PROD
 
 Para usar essa funcionalidade é muito simples, basta instalar o CloneBots no seu bot destino, adicionar a chave **HTTP/key** do bot que você deseja clonar no campo "Enter the source bot key" e depois de ter selecionado uma ou mais opções dessa sessão, é só clicar no botão **Clone** e pronto! o fluxo do bot A vai estar no bot B
 
-![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/clone-builder.png)
+![image](https://user-images.githubusercontent.com/34819624/231840840-50841104-9cdc-41b1-bb35-3456a4011d97.png)
+
 
 - **Builder:** Habilitando essa opção, você faz o clone de toda estrutura do builder + ações globais;
+- **General Settings:** Habilitando essa opção, você vai copiar todas as configurações gerais do bot origem para o bot destino;
 - **Resource:** Habilitando essa opção, você consegue levar todo conteúdo (menu '...' -&gt; conteúdo) do bot origem para o bot destino;
 - **Queue Management:** Habilitando essa opção, você pode também pode clonar o gerenciamento de fila que foi criado no bot origem para o destino;
 - **Ready Answers:** Habilitando essa opção, você pode clonar as respostas prontas da origem para o bot destino;
+- **Tags:** Habilitando essa opção, você pode clonar todas as tags de um bot para o outro;
 
 Obs: Geralmente eu faço um bot BETA, deixo ele redondinho, e depois habilito todos as opções e dou um clonar para meu bot de PROD.
 
