@@ -1,4 +1,6 @@
-![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/logoParseHorizontal.jpeg)
+
+![icone_github](https://github.com/Wilkor/doc-clonebots/assets/34819624/15ef8fb6-2549-4f08-b4b2-1529be63b734)
+
 
 O **CloneBots**, faz seu dia ser muito mais produtivo!
 Com ele é possivel: clonar estrutura builder, variáveis, ações globais, regras de atendimento, gerenciamento de filas, respostas prontas e recursos de um bot para outro! Além disso, você também consegue clonar blocos separadamente através da sessão Merge of Blocks.
