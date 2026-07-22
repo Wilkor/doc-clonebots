@@ -1,68 +1,88 @@
-
 ![icone_github](https://github.com/Wilkor/doc-clonebots/assets/34819624/15ef8fb6-2549-4f08-b4b2-1529be63b734)
 
+# Como clonar e migrar fluxos, blocos e recursos de bots no Blip com CloneBots
 
-O **CloneBots**, faz seu dia ser muito mais produtivo!
-Com ele é possivel: clonar estrutura builder, variáveis, ações globais, regras de atendimento, gerenciamento de filas, respostas prontas e recursos de um bot para outro! Além disso, você também consegue clonar blocos separadamente através da sessão Merge of Blocks.
+O **CloneBots** aumenta a produtividade da equipe permitindo a clonagem da estrutura do Builder, variáveis, ações globais, regras de atendimento, gerenciamento de filas, respostas prontas e recursos de um bot para outro, além da mesclagem de blocos específicos através da funcionalidade Merge of Blocks.
 
-# Clone Builder
-Nessa sessão do plugin, você pode fazer um clone de uma versão BETA para PROD, além de poder levar junto para o outro bot: resource (conteúdos), respostas prontas e gerenciamento de filas.
+**Palavras-chave:** CloneBots, Clonar Bot, Merge of Blocks, Chassi Bot, Broadcast Desk, Notificação Ativa
 
-Para usar essa funcionalidade é muito simples, basta instalar o CloneBots no seu bot destino, adicionar a chave **HTTP/key** do bot que você deseja clonar no campo "Enter the source bot key" e depois de ter selecionado uma ou mais opções dessa sessão, é só clicar no botão **Clone** e pronto! o fluxo do bot A vai estar no bot B
+---
+
+### 1. Vídeo demonstrativo
+Assista aos vídeos abaixo para conferir demonstrações práticas da extensão:
+
+- **Demonstração Geral de Funcionalidades:**  
+  https://youtu.be/nmxkEgLyZz0
+
+- **Resource and Builder Flow (Padrão Chassi):**  
+  [![IMAGE_ALT](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/builderFlow2.png)](https://youtu.be/E8YskEEM5Pc)
+
+### 2. Introdução
+O **CloneBots** é uma extensão que permite duplicar a estrutura completa ou parcial de um bot para outro no Blip. Ideal para promover versões do bot de um ambiente BETA para PROD com agilidade e segurança.
+
+### 3. Funcionalidades
+O **CloneBots** oferece as seguintes funcionalidades:
+
+- **Clone Builder**: Clonagem completa da estrutura do builder, ações globais, configurações gerais, recursos (conteúdos), gerenciamento de filas, respostas prontas e tags.
+- **Merge of Blocks**: Clonagem individual de um ou mais blocos específicos (com blocos pré-setados para validações como e-mail e CPF).
+- **Resource and Builder Flow (Padrão Chassi)**: Estrutura otimizada para bots desenvolvidos no padrão chassi (conceito .parse).
+- **Broadcast Desk (Uso em Roteadores + WhatsApp)**: Integração para disparo de notificações ativas pelo Blip Desk definindo templates padrão (serviço pago).
+- **Send Notification (Uso em Roteadores + WhatsApp)**: Envio de notificações ativas com inclusão de variáveis nos extras do contato.
+
+A extensão **CloneBots** é suportada nos seguintes canais: **Blip / WhatsApp (para notificações ativas)**.
+
+### 4. Instalação e Configuração
+Após ativar a extensão através da Blip Store, ela deve ser instalada no bot de destino.
+
+#### Passo a passo de Instalação e Uso:
+
+1. Instale o **CloneBots** no seu bot destino;
+2. Na aba **Clone Builder**, insira a chave **HTTP/key** do bot origem no campo *"Enter the source bot key"*;
+3. Selecione as opções que deseja clonar:
 
 ![image](https://user-images.githubusercontent.com/34819624/231840840-50841104-9cdc-41b1-bb35-3456a4011d97.png)
 
+- **Builder:** Clone da estrutura do builder + ações globais;
+- **General Settings:** Copia configurações gerais do bot origem para o destino;
+- **Resource:** Leva todo conteúdo (menu '...' -> conteúdo) do bot origem para o destino;
+- **Queue Management:** Clona o gerenciamento de filas;
+- **Ready Answers:** Clona as respostas prontas;
+- **Tags:** Clona todas as tags.
 
-- **Builder:** Habilitando essa opção, você faz o clone de toda estrutura do builder + ações globais;
-- **General Settings:** Habilitando essa opção, você vai copiar todas as configurações gerais do bot origem para o bot destino;
-- **Resource:** Habilitando essa opção, você consegue levar todo conteúdo (menu '...' -&gt; conteúdo) do bot origem para o bot destino;
-- **Queue Management:** Habilitando essa opção, você pode também pode clonar o gerenciamento de fila que foi criado no bot origem para o destino;
-- **Ready Answers:** Habilitando essa opção, você pode clonar as respostas prontas da origem para o bot destino;
-- **Tags:** Habilitando essa opção, você pode clonar todas as tags de um bot para o outro;
+4. Clique no botão **Clone** para transferir o fluxo.
 
-Obs: Geralmente eu faço um bot BETA, deixo ele redondinho, e depois habilito todos as opções e dou um clonar para meu bot de PROD.
+*Obs: Prática recomendada: Montar um bot BETA, validar as funções, habilitar todas as opções e clonar para o bot de PROD.*
 
-# Merge of Blocks
-A ideia aqui nesta sessão é fazer o clone apenas de um ou mais blocos, por default, eu deixei alguns blocos pre-setados que poderão ajudar em algum tipo de validação, por exemplo: validação de email, validação de cpf e etc.
-
-Caso queira clonar blocos de um outro bot, você pode pegar a chave **HTTP/Key** do bot origem, inserir no campo **bot key**, depois clicar em **get builder**.
-Bom, realizado o processo acima, basta selecionar o bloco desejado, levar ele parar a caixa a direita e clicar em **Merge**, após isso, o bloco selecionado deve aparecer no bot destino na mesma posição que ele estava no bot origem.
+#### Uso da funcionalidade Merge of Blocks:
+1. Insira a chave **HTTP/Key** do bot origem no campo **bot key** e clique em **get builder**;
+2. Selecione o bloco desejado, mova para a caixa à direita e clique em **Merge**;
+3. O bloco selecionado aparecerá no bot destino na mesma posição que estava no bot origem.
 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/merge-of-blocks.png)
 
-# Resource and Builder flow
+### 5. Exemplos de Uso e Recursos Avançados
 
-Esse sessão é restrita para quem cria bots no padrão **chassi**!
+#### Resource and Builder Flow (Padrão Chassi)
+Esta sessão é voltada para a criação de bots no padrão **chassi** (conceito .parse) na plataforma Blip, oferecendo:
+- Redução de caixinhas, deixando o builder objetivo;
+- Tracking automático gerado conforme navegação em inputs;
+- Reaproveitamento de bots (altera apenas o recurso do chassi ao trocar de skill);
+- Responsabilidade por bloco (Requisições trata chamadas/validações);
+- Suporte a multicanal.
 
-Hoje a **.parse** também tem um processo inovador de criação de fluxo utilizando a plataforma da takeBlip, nós a chamamos de chassi, com uma estrutura única e sem muitos blocos, nós adotamos um conceito de que cada bloco tem sua responsabilidade, com isso ganhamos velocidade no desenvolvimento, além dos benefícios que acreditamos que esse modelo nos entrega, são eles:
-
-- Redução de caixinhas, deixando o builder mais objetivo;
-
-- Tracking de forma automática, ou seja, sendo gerado de acordo com a navegação em inputs do usuário (diferente do Tracking automático que está em configurações);
-
-- Reaproveitamento de bots. Como é usado um chassi que é baseado no recurso, quando quiser trocar a skill do bot, troco apenas a estrutura do resource, e não o bot inteiro;
-
-- trago a ideia de responsabilidade por bloco, ou seja, Requisições é responsável por chamadas a serviços e valida inputs, responsável por tratar alguma informação referente ao input do usuário;
-
-- O chassi está baseado em multicanal, sendo possível adicionar qualquer outra skill de forma simples;
-
-Video demostrativo:
-
-[![IMAGE_ALT](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/builderFlow2.png)](https://youtu.be/E8YskEEM5Pc)
-
-# Broadcast Desk (Uso em bots Roteadores + WhatsApp instalado)
-Por essa sessão do plugin, podemos utilizar um outro plugin que foi desenvolvido para eviar **notificações ativas pelo Desk** (plataforma de atendimento da takeBlip)
-Aqui você só precisa indicar o template padrão que quer usar e pronto!
-
-obs:Serviço é pago.
+#### Broadcast Desk
+Configuração de envio ativo direto pelo Blip Desk:
+*(Obs: Serviço pago)*
 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/desk-configuration.png)
 
-# Send Notification (Uso em bots Roteadores + WhatsApp instalado)
-Nessa guia do plugin, ainda beta, você pode enviar notificações ativa para os clientes assim como é feito no próprio plugin de broadcast existente na plataforma, porém ao enviar através do **CloneBots**, você pode setar variaveis no extras do contato, oferecendo mais **flexibilidade e estrategia** na hora de recepcionar essa mensagem no fluxo.
+#### Send Notification
+Envio de notificações ativas setando variáveis nos extras do contato:
 
 ![N|Solid](https://raw.githubusercontent.com/Wilkor/img-clonebots/main/Send-notification.png)
 
-🎬 Video de demonstração de algumas funcionalidades:
+### 6. Suporte
+Em caso de dúvidas ou necessidade de auxílio na configuração do CloneBots, entre em contato conosco:
 
-https://youtu.be/nmxkEgLyZz0
+- **E-mail**: contato@wconsulting.tech
+- **Telefone/WhatsApp**: 1191628-2384
